@@ -63,15 +63,22 @@
         justify-content: space-around;
     }
 
-    .Avaliacao1-2_Notas p{
+    .Avaliacao1-2_Notas button{
         background-color: rgb(63, 63, 63);
         border-radius: 50%;
-        padding: 10px 16px;
+        padding: 11px 16px;
         cursor: pointer;
+        border: none;
+        outline: none;
+        color: white;
     }
 
-    .Avaliacao1-2_Notas p:hover{
+    .Avaliacao1-2_Notas button:hover{
         background-color: rgb(79, 79, 79);
+    }
+
+    .Avaliacao1-2_Notas button:focus{
+        background-color: rgb(216, 173, 0);
     }
   
     .Avaliacao1-2_Envio{
