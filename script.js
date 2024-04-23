@@ -1,4 +1,4 @@
-var notaDada = 0
+var notaDada = 0 
 
 function notas(n){
     if(n == 1){
@@ -23,6 +23,17 @@ function notas(n){
 }
 
 function EnviarNota(){
+
+    if(notaDada == 0){
+        Swal.fire({
+            text: 'Selecione uma nota antes de enviar',
+            icon: 'error',
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#EA9D20'
+          });
+        return
+    }
+
     let parte1 = window.document.querySelector("section.Avaliacao1-2")
     let parte2 = window.document.querySelector("section.Avaliacao2-2")
     parte1.style.display = "none"
@@ -30,4 +41,5 @@ function EnviarNota(){
 
     let TextoFinalAvaliacao = window.document.querySelector("p.TextoFinalAvaliacao")
     TextoFinalAvaliacao.innerHTML = `Voçê selecionou ${notaDada} de 5`
+
 }
