@@ -3,11 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-
-    <meta http-equiv="refresh" content="2" />
-
     <title>feedBack</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./img/icon_clima-removebg-preview.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/star.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -21,14 +18,14 @@
                 <p>Conte-nos como foi nossa ajuda com sua solicitação. Agradecemos muito seu feedback para podermos melhorar nosso atendimento.</p>
             </div>
             <div class="Avaliacao1-2_Notas">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
+                <button class="n1" onclick="notas(1)">1</button>
+                <button class="n2" onclick="notas(2)">2</button>
+                <button class="n3" onclick="notas(3)">3</button>
+                <button class="n4" onclick="notas(4)">4</button>
+                <button class="n5" onclick="notas(5)">5</button>
             </div>
             <div class="Avaliacao1-2_Envio">
-                <button><a href="#">Enviar</a></button>
+                <button onclick="EnviarNota()"><a href="#">Enviar</a></button>
             </div>
         </section>
 
@@ -37,7 +34,7 @@
                 <img src="./img/feedback-do-cliente.png" alt="imangem de feedback">
             </div>
             <div class="Avaliacao2-2_Nota">
-                <p>Voçê selecionou 1 de 5</p>
+                <p class="TextoFinalAvaliacao">Voçê selecionou 1 de 5</p>
             </div>
             <div class="Avaliacao2-2_Texto">
                 <h1>Obrigado!</h1>
